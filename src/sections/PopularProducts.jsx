@@ -2,7 +2,9 @@ import React from 'react'
 
 const PopularProducts = () => {
   return (
-    <div>PopularProducts</div>
+    <section className='flex w-full bg-slate-300 padding' >
+      PopularProducts
+    </section>
   )
 }
 

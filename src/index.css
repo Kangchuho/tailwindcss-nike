@@ -23,10 +23,7 @@
   }
 }
 
-@layer utilities {
-  .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
-  }
+@layer utilities { 
 
   .padding-x {
     @apply sm:px-16 px-8;
@@ -55,4 +52,9 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
 }
