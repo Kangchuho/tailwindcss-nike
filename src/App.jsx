@@ -5,18 +5,18 @@ import { Hero, PopularProducts, SuperQuality, Services, SpecialOffer ,
 const App = () => {
   return (
     <main className='relative'>
-      <Nav />
+      <Nav/>
       <section className='xl:padding-l wide:padding-r padding-b' >
-        <Hero />
+        <Hero/>
       </section>
       <section className='padding'>
         <PopularProducts />
       </section>
       <section className='padding'>
-        <SuperQuality />
+        <SuperQuality/>
       </section>
       <section className='padding-x pay-10'>
-        <Services />
+        <Services/>
       </section>
       <section className='padding'>
         <SpecialOffer />
