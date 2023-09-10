@@ -1,19 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../components/Button'
 import { arrowRight } from '../assets/icons'
 import { shoes, statistics } from '../constant'
 import { bigShoe1 } from '../assets/images'
 import ShoeCard from '../components/ShoeCard'
+import { Debounce } from '../components/debounce'
+
+
 
 const Hero = () => {
   const [selectShoe, setSelectShoe] = useState(bigShoe1);
+
   return (
+    <>
     <section id='home'
       className={`w-full flex xl:flex-row flex-col justify-center 
       min-h-screen gap-10 max-container
       ${false && 'border-2 border-red-500 p-2 bg-gray-800/10'} `}
     >
       <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28'>
+        
         <p className='text-lg font-montserrat text-coral-red'>
           Our Summer Collections
         </p>
@@ -56,6 +62,12 @@ const Hero = () => {
           </div>
       </div>
     </section>
+    <div className='w-full flex xl:flex-row flex-col justify-center 
+      gap-10 mt-20 mb-0'>
+      {/* 0.5초간 입력이 없으면 api검색 수행 */}
+      <Debounce/>
+    </div>
+    </>
   )
 }
 
