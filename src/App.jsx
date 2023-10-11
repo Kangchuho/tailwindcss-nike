@@ -1,13 +1,25 @@
+// import ArraySets from './components/ArraySets';
+import ArraySets2 from './components/ArraySets2';
 import Nav from './components/Nav';
 import { Hero, PopularProducts, SuperQuality, Services, SpecialOffer ,
    CustomerReviews , Subscribe, Footer} from './sections';
 
 const App = () => {
+
+  
+
   return (
     <main className='relative'>
-      <Nav/>
       <section className='xl:padding-l wide:padding-r padding-b' >
+        {/* <ArraySets/> */}
+        <ArraySets2/>
+      </section>
+      <Nav/>
+      
+      <section className='xl:padding-l wide:padding-r padding-b' >
+       
         <Hero/>
+        
       </section>
       <section className='padding'>
         <PopularProducts />
